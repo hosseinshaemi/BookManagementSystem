@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="319.0" style="-fx-background-color: #F5F3C1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bookmanager.ShowBookController">
+   <children>
+      <BorderPane prefHeight="234.0" prefWidth="319.0">
+         <left>
+            <VBox prefHeight="234.0" prefWidth="111.0" spacing="17.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="id" />
+                  <Label text="name" />
+                  <Label text="author" />
+                  <Label text="isbn" />
+                  <Label lineSpacing="12.0" text="publish date" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="30.0" top="25.0" />
+               </padding>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="234.0" prefWidth="208.0" spacing="17.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="idLbl" style="-fx-border-width: 11em;" />
+                  <Label fx:id="nameLbl" />
+                  <Label fx:id="authorLbl" />
+                  <Label fx:id="isbnLbl" />
+                  <Label fx:id="pubdateLbl" />
+               </children>
+               <padding>
+                  <Insets left="93.0" top="26.0" />
+               </padding>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

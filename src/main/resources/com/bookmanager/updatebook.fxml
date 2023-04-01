@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="208.0" prefWidth="464.0" style="-fx-background-color: #27E1C1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bookmanager.UpdateBookController">
+   <children>
+      <BorderPane prefHeight="208.0" prefWidth="465.0">
+         <left>
+            <VBox prefHeight="400.0" prefWidth="198.0" spacing="21.0" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Label text="Name" />
+                  <Label text="Author" />
+                  <Label text="ISBN" />
+                  <Label text="Publish Date" />
+                  <Button fx:id="updatebookBtn" mnemonicParsing="false" onAction="#UpdateBookHandler" prefHeight="25.0" prefWidth="136.0" stylesheets="@styles.css" text="Update" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="38.0" top="16.0" />
+               </padding>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="400.0" prefWidth="267.0" spacing="14.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="nameFld" style="-fx-background-radius: 0;" styleClass="addbooktextflds" stylesheets="@styles.css">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="authorFld" style="-fx-background-radius: 0;" styleClass="addbooktextflds" stylesheets="@styles.css" />
+                  <TextField fx:id="isbnFld" style="-fx-background-radius: 0;" styleClass="addbooktextflds" stylesheets="@styles.css" />
+                  <TextField fx:id="pubdateFld" style="-fx-background-radius: 0;" styleClass="addbooktextflds" stylesheets="@styles.css" />
+               </children>
+               <padding>
+                  <Insets left="16.0" right="16.0" top="10.0" />
+               </padding>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
